@@ -1,8 +1,51 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 40px;
+  font: 20px "Didot", "Bodoni MT", "Times New Roman", serif;
+  background-color: #fbc8d9; /* Светло-розовый фон */
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-family: "Didot", "Bodoni MT", "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
+  margin-bottom: 20px;
+  color: #D81B60; /* Ярко-розовый цвет заголовка */
+}
+
+h2 {
+  font-family: "Didot", "Bodoni MT", "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
+  margin-bottom: 20px;
+  color: #D81B60; /* Ярко-розовый цвет заголовка */
+}
+
+h4, p {
+   font-family: "Didot";
+   font-weight: 400;
+   letter-spacing: 2px;
+   color: #880E4F; /* Темно-розовый цвет */
 }
 
 a {
-  color: #00B7FF;
+  color: #FF4081; /* Розовый цвет ссылок */
+  text-decoration: none;
+  border-bottom: 2px solid transparent; /* Эффект подчеркивания */
+  transition: all 0.3s ease; /* Плавный переход для ссылок */
+}
+
+a:hover {
+  border-bottom: 2px solid #FF4081; /* Подчеркивание при наведении */
+  color: #C51162; /* Темно-розовый цвет при наведении */
+}
+
+.desc {
+  font-size: 18px;
+  font-style: italic; 
+  line-height: 1.8;
+  color: #6A1B9A; /* Фиолетово-розовый цвет текста */
 }
