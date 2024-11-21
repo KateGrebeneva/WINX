@@ -1,13 +1,11 @@
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://127.0.0.1:27017/testMongoose2024');
 
-var schema = mongoose.Schema({ name: String })
+var Winx = require('./models/winx.js').Winx
 
-schema.methods.magic = function(){
-    console.log(this.name + " сказала магия!")
-}
+var winx = new Winx({
+    title: "Дафна",
+    nick: "daphna",
+})
 
-const Winx = mongoose.model('Winx', schema);
-
-const fairy = new Winx({ name: 'Рокси' });
-fairy.save().then(() => fairy.magic());
+winx.save();
