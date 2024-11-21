@@ -13,7 +13,7 @@ router.get("/:nick", async function(req, res, next) {
         var winxes = await Winx.find({ nick: req.params.nick });
         console.log(winxes);
         if (!winxes.length) {
-            var err = new Error("Нет такой феечки в мультике Winx!.");
+            var err = new Error("Нет такой феечки в мультике Winx!");
             err.status = 404;
             return next(err);
         }
