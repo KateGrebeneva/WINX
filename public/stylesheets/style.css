@@ -1,7 +1,7 @@
 body {
   padding: 40px;
   font: 20px "Didot", "Bodoni MT", "Times New Roman", serif;
-  background-color: #fbc8d9; /* Светло-розовый фон */
+  background-color: #fbc8d9 !important; /* Светло-розовый фон */
   line-height: 1.6;
   letter-spacing: 0.5px;
 }
@@ -12,7 +12,7 @@ h1 {
   letter-spacing: 2px; 
   text-transform: uppercase; 
   margin-bottom: 20px;
-  color: #D81B60; /* Ярко-розовый цвет заголовка */
+  color: #D81B60 !important; /* Ярко-розовый цвет заголовка */
 }
 
 h2 {
@@ -21,14 +21,14 @@ h2 {
   letter-spacing: 2px; 
   text-transform: uppercase; 
   margin-bottom: 20px;
-  color: #D81B60; /* Ярко-розовый цвет заголовка */
+  color: #D81B60 !important; /* Ярко-розовый цвет заголовка */
 }
 
 h4, p {
    font-family: "Didot";
    font-weight: 400;
    letter-spacing: 2px;
-   color: #880E4F; /* Темно-розовый цвет */
+   color: #880E4F !important; /* Темно-розовый цвет */
 }
 
 a {
@@ -47,5 +47,62 @@ a:hover {
   font-size: 18px;
   font-style: italic; 
   line-height: 1.8;
-  color: #6A1B9A; /* Фиолетово-розовый цвет текста */
+  color: #6A1B9A !important; /* Фиолетово-розовый цвет текста */
+}
+/* Стили для навигационной панели */
+.navbar {
+  background-color: #fce4ec; /* Светло-розовый фон */
+  padding: 15px;
+  border-radius: 10px; /* Закругленные углы */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+}
+
+/* Стили для ссылок в навигационной панели */
+.nav-link {
+  font-family: "Didot";
+  color: #ff0066 !important; /* Темно-розовый цвет текста */
+  padding: 10px 20px; /* Внутренние отступы */
+  border-radius: 5px; /* Закругленные углы */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход */
+}
+
+/* Эффект при наведении на ссылки */
+.nav-link:hover {
+  font-family: "Didot";
+  background-color: #ffb1ce !important; /* Ярко-розовый фон при наведении */
+  color: #ffffff; /* Белый цвет текста при наведении */
+}
+.navbar-brand {
+  font-family: "Bodoni MT";
+  color: #c8003f !important;
+}
+/* Активная ссылка */
+.nav-link.active {
+  font-family: "Didot";
+  background-color: #880e4f !important; /* Темно-розовый фон для активной кнопки */
+  color: #ffffff; /* Белый цвет текста для активной кнопки */
+}
+
+/* Стили для кнопок */
+.btn {
+  background-color: #f06292; /* Розовый фон кнопки */
+  color: #ffffff; /* Белый цвет текста */
+  padding: 10px 20px; /* Внутренние отступы */
+  border: none; /* Без границы */
+  border-radius: 5px; /* Закругленные углы */
+  font-size: 16px; /* Размер шрифта */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Плавные переходы */
+}
+
+/* Эффект при наведении на кнопки */
+.btn:hover {
+  background-color: #ec407a !important; /* Более яркий розовый фон при наведении */
+  transform: scale(1.05); /* Увеличение размера при наведении */
+}
+
+/* Активная кнопка */
+.btn.active {
+  background-color: #c2185b !important; /* Темно-розовый фон для активной кнопки */
 }
