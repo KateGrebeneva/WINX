@@ -8,32 +8,56 @@ router.get('/', function(req, res, next) {
 
 /* Страница Блум */
 router.get('/bloom', function(req, res, next) {
-  res.send("<h1>Страница Блум</h1>")
+  res.render('winx', {
+    title: "Блум",
+    picture: "/images/bloom.png",
+    desc: "Фея Огня Дракона и принцесса планеты Домино."
+    });
   });
-  
-/* Страница Стеллы */
+    
+  /* Страница Стеллы */
 router.get('/stella', function(req, res, next) {
-  res.send("<h1>Страница Стеллы</h1>")
+  res.render('winx', {
+    title: "Стелла",
+    picture: "images/stella.png",
+    desc: "/Фея Солнца, Луны и Звёзд и принцесса Солярии"
+    });
   });
 
-/* Страница Флоры */
+  /* Страница Флоры */
 router.get('/flora', function(req, res, next) {
-  res.send("<h1>Страница Флоры</h1>")
+   res.render('winx', {
+    title: "Флора",
+    picture: "/images/flora.png",
+    desc: "Фея природы и фея-хранительница Линфеи"
+    });
   });
 
-/* Страница Музы */
+  /* Страница Музы */
 router.get('/musa', function(req, res, next) {
-  res.send("<h1>Страница Музы</h1>")
-  });
+  res.render('winx', {
+    title: "Муза",
+    picture: "/images/musa.png",
+    desc: "Фея музыки и гармонии, хранительница Мелодии."
+    });
+    });
 
-/* Страница Текны */
+  /* Страница Текны */
 router.get('/tecna', function(req, res, next) {
-  res.send("<h1>Страница Текны</h1>")
+  res.render('winx', {
+    title: "Текна",
+    picture: "/images/tecna.png",
+    desc: "Фея технологий и фея-хранительница Зенита."
+    });
   });
 
-/* Страница Лейлы */
+  /* Страница Лейлы */
 router.get('/aisha', function(req, res, next) {
-  res.send("<h1>Страница Лейлы</h1>")
+  res.render('winx', {
+    title: "Лейла",
+    picture: "/images/aisha.png",
+    desc: "Фея волн и морфикса, принцесса Андроса"
+    });
   });
-
+    
 module.exports = router;
