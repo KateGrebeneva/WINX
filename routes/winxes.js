@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Winx = require('../models/winx').Winx;
+var checkAuth = require("../middlewares/checkAuth.js");
 
 /* GET winxes listing. */
 router.get('/', function(req, res, next) {
@@ -8,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* Страница феечки */
-router.get("/:nick", async function(req, res, next) {
+router.get("/:nick", checkAuth, async function(req, res, next) {
     try {
         var winxes = await Winx.find({ nick: req.params.nick });
         console.log(winxes);
